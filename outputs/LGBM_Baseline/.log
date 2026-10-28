@@ -1,0 +1,33 @@
+2026-10-29 00:36:13 [INFO] train_size: (464809, 54), test_size: (116203, 54)
+2026-10-29 00:36:13 [INFO] Start Cross Validation (5 folds)
+2026-10-29 00:36:13 [INFO] oof_prob: (464809, 7), test_prob: (116203, 7)
+2026-10-29 00:36:13 [INFO] Fold 1/5 - X_tr: (371847, 54), X_val: (92962, 54)
+2026-10-29 00:36:33 [INFO] Fold 1/5 - val_prob: (92962, 7), fold_test_prob: (116203, 7)
+2026-10-29 00:36:33 [INFO] Fold 1/5 - Accuracy: 0.8507
+2026-10-29 00:36:33 [INFO] Fold 2/5 - X_tr: (371847, 54), X_val: (92962, 54)
+2026-10-29 00:36:53 [INFO] Fold 2/5 - val_prob: (92962, 7), fold_test_prob: (116203, 7)
+2026-10-29 00:36:53 [INFO] Fold 2/5 - Accuracy: 0.8560
+2026-10-29 00:36:53 [INFO] Fold 3/5 - X_tr: (371847, 54), X_val: (92962, 54)
+2026-10-29 00:37:13 [INFO] Fold 3/5 - val_prob: (92962, 7), fold_test_prob: (116203, 7)
+2026-10-29 00:37:13 [INFO] Fold 3/5 - Accuracy: 0.8522
+2026-10-29 00:37:13 [INFO] Fold 4/5 - X_tr: (371847, 54), X_val: (92962, 54)
+2026-10-29 00:37:32 [INFO] Fold 4/5 - val_prob: (92962, 7), fold_test_prob: (116203, 7)
+2026-10-29 00:37:32 [INFO] Fold 4/5 - Accuracy: 0.8601
+2026-10-29 00:37:32 [INFO] Fold 5/5 - X_tr: (371848, 54), X_val: (92961, 54)
+2026-10-29 00:37:52 [INFO] Fold 5/5 - val_prob: (92961, 7), fold_test_prob: (116203, 7)
+2026-10-29 00:37:52 [INFO] Fold 5/5 - Accuracy: 0.8553
+2026-10-29 00:37:53 [INFO] classification report
+                   precision    recall  f1-score   support
+
+       Spruce/Fir     0.8547    0.8199    0.8369     42368
+   Lodgepole Pine     0.8552    0.8914    0.8729     56661
+   Ponderosa Pine     0.8849    0.9171    0.9007      7151
+Cottonwood/Willow     0.8512    0.8543    0.8527       549
+            Aspen     0.8842    0.6435    0.7449      1899
+      Douglas-fir     0.8562    0.7970    0.8255      3473
+        Krummholz     0.9393    0.8986    0.9185      4102
+
+         accuracy                         0.8601    116203
+        macro avg     0.8751    0.8317    0.8503    116203
+     weighted avg     0.8603    0.8601    0.8595    116203
+
