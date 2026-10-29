@@ -36,7 +36,7 @@ def crossvalidation(X_train, y_train, X_test):
         test_prob += fold_test_prob / N_SPLITS
 
         score = accuracy_score(y_val, val_prob.argmax(axis=1))
-        logger.info(f"Fold {fold + 1}/{N_SPLITS} - Accuracy: {score:.4f}")
+        logger.info(f"Fold {fold + 1}/{N_SPLITS} - Accuracy: {score:.4f} (best_iter={model.best_iteration_})")
 
         models.append(model)
         fold_scores.append(score)

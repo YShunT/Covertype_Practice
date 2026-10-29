@@ -51,8 +51,11 @@ def plot_learning_curve(models, save_path):
     fig, axes = plt.subplots(1, 2, figsize=(12, 4))
     for ax, metric in zip(axes, ["multi_error", "multi_logloss"]):
         for data_name in ["train", "valid"]:
-            curves = np.array([m.evals_result_[data_name][metric] for m in models])  # (fold数, 木の本数)
-            ax.plot(curves.mean(axis=0), label=data_name)
+            curves = [m.evals_result_[data_name][metric] for m in models]
+            stacked = np.full((len(curves), max(len(c) for c in curves)), np.nan)
+            for i, c in enumerate(curves):
+                stacked[i, : len(c)] = c
+            ax.plot(np.nanmean(stacked, axis=0), label=data_name)
         ax.set_xlabel("iteration")
         ax.set_ylabel(metric)
         ax.legend()

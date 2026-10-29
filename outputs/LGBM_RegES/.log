@@ -1,0 +1,33 @@
+2026-10-29 19:25:52 [INFO] train_size: (464809, 54), test_size: (116203, 54)
+2026-10-29 19:25:52 [INFO] Start Cross Validation (5 folds)
+2026-10-29 19:25:52 [INFO] oof_prob: (464809, 7), test_prob: (116203, 7)
+2026-10-29 19:25:53 [INFO] Fold 1/5 - X_tr: (371847, 54), X_val: (92962, 54)
+2026-10-29 19:35:16 [INFO] Fold 1/5 - val_prob: (92962, 7), fold_test_prob: (116203, 7)
+2026-10-29 19:35:16 [INFO] Fold 1/5 - Accuracy: 0.9674 (best_iter=3817)
+2026-10-29 19:35:16 [INFO] Fold 2/5 - X_tr: (371847, 54), X_val: (92962, 54)
+2026-10-29 19:42:29 [INFO] Fold 2/5 - val_prob: (92962, 7), fold_test_prob: (116203, 7)
+2026-10-29 19:42:29 [INFO] Fold 2/5 - Accuracy: 0.9675 (best_iter=3258)
+2026-10-29 19:42:29 [INFO] Fold 3/5 - X_tr: (371847, 54), X_val: (92962, 54)
+2026-10-29 19:50:05 [INFO] Fold 3/5 - val_prob: (92962, 7), fold_test_prob: (116203, 7)
+2026-10-29 19:50:05 [INFO] Fold 3/5 - Accuracy: 0.9669 (best_iter=3444)
+2026-10-29 19:50:05 [INFO] Fold 4/5 - X_tr: (371847, 54), X_val: (92962, 54)
+2026-10-29 19:57:20 [INFO] Fold 4/5 - val_prob: (92962, 7), fold_test_prob: (116203, 7)
+2026-10-29 19:57:20 [INFO] Fold 4/5 - Accuracy: 0.9673 (best_iter=3345)
+2026-10-29 19:57:20 [INFO] Fold 5/5 - X_tr: (371848, 54), X_val: (92961, 54)
+2026-10-29 20:05:20 [INFO] Fold 5/5 - val_prob: (92961, 7), fold_test_prob: (116203, 7)
+2026-10-29 20:05:20 [INFO] Fold 5/5 - Accuracy: 0.9673 (best_iter=3782)
+2026-10-29 20:05:20 [INFO] classification report
+                   precision    recall  f1-score   support
+
+       Spruce/Fir     0.9725    0.9655    0.9690     42368
+   Lodgepole Pine     0.9705    0.9783    0.9744     56661
+   Ponderosa Pine     0.9620    0.9692    0.9656      7151
+Cottonwood/Willow     0.9091    0.8561    0.8818       549
+            Aspen     0.9417    0.8931    0.9168      1899
+      Douglas-fir     0.9460    0.9375    0.9417      3473
+        Krummholz     0.9756    0.9661    0.9708      4102
+
+         accuracy                         0.9694    116203
+        macro avg     0.9539    0.9380    0.9457    116203
+     weighted avg     0.9694    0.9694    0.9694    116203
+

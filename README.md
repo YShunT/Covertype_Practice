@@ -41,3 +41,4 @@ python src/main.py
 |---|---|---|---|---|
 | LightGBM ベースライン (問１) | 0.8549 ± 0.0033 | 0.8601 | 0.8503 | [LGBM_Baseline](https://github.com/YShunT/Covertype/tree/LGBM_Baseline) |
 | +正則化 | 0.8577 ± 0.0008 | 0.8597 | 0.8479 | [LGBM_Reg](https://github.com/YShunT/Covertype/tree/LGBM_Reg) |
+| early stopping | 0.9673 ± 0.0002 | 0.9694 | 0.9457 | [LGBM_RegES](https://github.com/YShunT/Covertype/tree/LGBM_RegES) |
