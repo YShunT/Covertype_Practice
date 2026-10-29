@@ -2,7 +2,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_PATH = ROOT / "covertype" / "covtype.data.gz"
-OUTPUT_DIR = ROOT / "outputs" / "LGBM_RegES"
+OUTPUT_DIR = ROOT / "outputs" / "LGBM_FE"
 
 SEED = 42
 N_SPLITS = 5
