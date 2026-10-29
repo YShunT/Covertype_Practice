@@ -2,7 +2,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_PATH = ROOT / "covertype" / "covtype.data.gz"
-OUTPUT_DIR = ROOT / "outputs" / "LGBM_Baseline"
+OUTPUT_DIR = ROOT / "outputs" / "LGBM_Reg"
 
 SEED = 42
 N_SPLITS = 5
@@ -41,7 +41,9 @@ LGBM_PARAMS = dict(
     num_class=N_CLASSES,
     learning_rate=0.1,
     num_leaves=31,
-    n_estimators=100, 
+    n_estimators=100,
+    min_child_weight=1,
+    reg_lambda=1,
     random_state=SEED,
     n_jobs=-1,
     verbose=-1

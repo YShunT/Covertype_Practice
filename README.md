@@ -38,3 +38,4 @@ python src/main.py
 | モデル | CV accuracy | test accuracy | test macro F1 |
 |---|---|---|---|
 | LightGBM ベースライン (問１) | 0.8549 ± 0.0033 | 0.8601 | 0.8503 |
+| +正則化 | 0.8577 ± 0.0008 | 0.8597 | 0.8479 |
