@@ -35,7 +35,9 @@ python src/main.py
 
 ## 結果
 
-| モデル | CV accuracy | test accuracy | test macro F1 |
-|---|---|---|---|
-| LightGBM ベースライン (問１) | 0.8549 ± 0.0033 | 0.8601 | 0.8503 |
-| +正則化 | 0.8577 ± 0.0008 | 0.8597 | 0.8479 |
+各実験のコードはタグで残しており、`git checkout <タグ>` で再現できる。
+
+| モデル | CV accuracy | test accuracy | test macro F1 | コード |
+|---|---|---|---|---|
+| LightGBM ベースライン (問１) | 0.8549 ± 0.0033 | 0.8601 | 0.8503 | [LGBM_Baseline](https://github.com/YShunT/Covertype/tree/LGBM_Baseline) |
+| +正則化 | 0.8577 ± 0.0008 | 0.8597 | 0.8479 | [LGBM_Reg](https://github.com/YShunT/Covertype/tree/LGBM_Reg) |
